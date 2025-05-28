@@ -1,225 +1,69 @@
-<!DOCTYPE html>
-<html lang="ru">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>QA Engineer Portfolio - Юрчук Максим</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>Maxim Yurchuk</title>
+		<meta charset="utf-8" />
+		
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
 <link rel="manifest" href="/site.webmanifest">
-    <style>
-        :root {
-            --primary-white: #ffffff;
-            --dark-accent: #1e293b;
-            --dark-transparent: rgba(30, 41, 59, 0.9);
-        }
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+		<div id="wrapper">
+			<div id="bg"></div>
+			<div id="overlay"></div>
+			<div id="main">
 
-        body {
-            margin: 0;
-            font-family: 'Inter', sans-serif;
-            background: url('23456.jpg') center/cover fixed;
-            color: var(--primary-white);
-            line-height: 1.6;
-            min-height: 100vh;
-        }
+				<!-- Header -->
+					<header id="header">
+						<h1>Maxim Yurchuk</h1>
+						<p>QA Engineer &nbsp;&bull;&nbsp; Cyborg &nbsp;&bull;&nbsp; Runner</p>
 
-        .profile-header {
-            padding: 0px 75px 0px;
-            text-align: center;
-            margin: 40px;
-            border-radius: 10px;
-            border: 0px solid var(--primary-white);
-        }
 
-        .profile-photo {
-            width: 200px;
-            height: 200px;
-            border-radius: 50%;
-            object-fit: cover;
-            border: 3px solid var(--primary-white);
-            margin: 0 auto 25px;
-            background: transparent;
-            box-shadow: 0 8px 20px rgba(255,255,255,0.15);
-        }
 
-        .skills-container {
-            max-width: 550px;
-            margin: 0 auto;
-            padding: 50px 15px;
-            background: transparent;
-        }
+						<ul> &nbsp;&bull;&nbsp;
+						<li> 
 
-        .name-title {
-            font-size: 2.2rem;
-            margin: 0 0 15px;
-            color: var(--primary-white);
-            text-shadow: 0 2px 4px rgba(0,0,0,0.3);
-        }
+ Веб приложения
+<li> 
 
-        .position {
-            font-size: 1.2rem;
-            color: var(--primary-white);
-            margin-bottom: 20px;
-            font-weight: 600;
-            text-shadow: 0 2px 4px rgba(0,0,0,0.2);
-        }
 
-        .skill-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 25px;
-            margin: 30px 0;
-        }
+Тестирование сложной бизнес-логики
+<li> 
 
-        .skill-card {
-            background: var(--dark-transparent);
-            border-radius: 12px;
-            padding: 25px;
-            border: 2px solid var(--primary-white);
-            box-shadow: 0 4px 12px rgba(255,255,255,0.1);
-            transition: all 0.3s ease;
-            text-align: center;
-            backdrop-filter: blur(5px);
-        }
 
-        .skill-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 8px 20px rgba(255,255,255,0.2);
-        }
+REST API, Postman, Swagger
+<li> 
 
-        .skill-icon {
-            font-size: 1.8rem;
-            color: var(--primary-white);
-            margin-bottom: 15px;
-        }
 
-        .telegram-btn {
-            display: inline-flex;
-            align-items: center;
-            gap: 10px;
-            padding: 15px 40px;
-            background: var(--primary-white);
-            color: #1e293b;
-            text-decoration: none;
-            border-radius: 8px;
-            transition: all 0.3s ease;
-            margin: 15px 0;
-            border: 2px solid var(--primary-white);
-        }
+SQL, PostgreSQL
+<li> 
 
-        .email-btn {
-            display: inline-flex;
-            align-items: center;
-            gap: 10px;
-            padding: 15px 40px;
-            background: var(--dark-accent);
-            color: var(--primary-white);
-            text-decoration: none;
-            border-radius: 8px;
-            transition: all 0.3s ease;
-            margin: 15px 0;
-            border: 2px solid var(--primary-white);
-        }
 
-        .telegram-btn:hover, .email-btn:hover {
-            transform: scale(1.05);
-            background: rgba(255,255,255,0.9);
-        }
+Тест-кейсы, чек-листы
+<li> 
 
-        .email-btn:hover {
-            background: rgba(30, 41, 59, 0.9);
-        }
 
-        @media (max-width: 768px) {
-            .profile-header {
-                margin: 10px;
-                padding: 40px 15px;
-            }
+Техники тест-дизайна</p>
 
-            .profile-photo {
-                width: 200px;
-                height: 200px;
-            }
 
-            .name-title {
-                font-size: 1.8rem;
-            }
 
-            .skills-container {
-                padding: 30px 10px;
-            }
-
-            .telegram-btn, .email-btn {
-                margin: 10px 0;
-                padding: 12px 30px;
-            }
-        }
-    </style>
-</head>
-<body>
-    <header class="profile-header">
-        <img src="sitephoto.jpg" alt="Фото профиля" class="profile-photo">
-        <h1 class="name-title">Maxim Yurchuk </h1>
-        <div class="position"><b> QA Engineer</b></div>
-        <div class="position">Путешествия, горы, поиск багов и проблем</div>
-    </header>
-
-    <div class="skills-container">
-        <div class="skill-grid">
-            <div class="skill-card">
-                <i class="skill-icon fas fa-mobile-alt"></i>
-                <h3>Мануальное тестирование</h3>
-                <p>Веб/мобильные приложения (2+ года)</p>
-            </div>
-
-            <div class="skill-card">
-                <i class="skill-icon fas fa-sitemap"></i>
-                <h3>Сложные системы</h3>
-                <p>Тестирование сложной бизнес-логики</p>
-            </div>
-        </div>
-
-        <div class="skill-grid">
-            <div class="skill-card">
-                <i class="skill-icon fas fa-code"></i>
-                <h3>API Testing</h3>
-                <p>REST API, Postman, Swagger</p>
-            </div>
-
-            <div class="skill-card">
-                <i class="skill-icon fas fa-database"></i>
-                <h3>Базы данных</h3>
-                <p>SQL, PostgreSQL</p>
-            </div>
-        </div>
-
-        <div class="skill-grid">
-            <div class="skill-card">
-                <i class="skill-icon fas fa-file-alt"></i>
-                <h3>Документация</h3>
-                <p>Тест-кейсы, чек-листы</p>
-            </div>
-
-            <div class="skill-card">
-                <i class="skill-icon fas fa-brain"></i>
-                <h3>Тест-дизайн</h3>
-                <p>Техники тест-дизайна</p>
-            </div>
-        </div>
-    </div>
-
-    <div style="text-align: center; margin: 30px 0;">
-        <a href="https://t.me/qqqqqqqwertyy" class="telegram-btn">
-            <i class="fab fa-telegram"></i>
-            Связаться в Telegram
-        </a>
-        
-        <a href="mailto:makcyurchuk@yandex.ru" class="email-btn">
-            <i class="fas fa-envelope"></i>
-            Написать на Email
-        </a>
-    </div>
-</body>
+						<nav>
+							<ul>
+								<li><a href="https://t.me/qqqqqqqwertyy" class="icon brands fa-telegram"><span class="label">Telegram</span></a></li>
+								<li><a href="mailto:makcyurchuk@yandex.ru" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+							</ul>
+						</nav>
+</div>
+		<script>
+			window.onload = function() { document.body.classList.remove('is-preload'); }
+			window.ontouchmove = function() { return false; }
+			window.onorientationchange = function() { document.body.scrollTop = 100; }
+		</script>
+	</body>
 </html>
